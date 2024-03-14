@@ -39,3 +39,32 @@ A quien va dirigido este contenido:
     Cualquier persona interesada en aprender Bootstrap de una forma entretenida, sin extenderse en rollos teóricos.
     Personas que ya conocen Bootstrap y quieren profundizar sus conocimientos.
     Cualquiera que desee conocer las novedades que Bootstrap 4 nos trae.
+
+
+
+Requisitos y herramientas
+
+    HTML5, CSS, JS
+
+    Preprocesador CSS3
+        https://prepros.io/
+
+        http://koala-app.com/
+
+Plugin de navegadores
+    Live Page for Google Chrome
+
+            https://github.com/MikeRogers0/LivePage
+
+            https://livepage-mikerogers-io.netlify.app/
+
+Editored de Codigo
+        Atom dejo de estar vigente desde el 15 de diciembre de 2022
+            https://github.blog/2022-06-08-sunsetting-atom/
+
+            https://www.sublimetext.com/index2
+
+            https://brackets.io/
+
+            http://mikerogers.io/
+
