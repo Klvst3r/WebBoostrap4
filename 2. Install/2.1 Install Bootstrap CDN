@@ -1,0 +1,98 @@
+1. Install Bootstrap CDN
+
+
+Descargar Boostrap desde:
+	getbootstrap.com
+
+Para este periodo de tiempo la versión actual ya se encuentra en la versión 5.x, pero continuaremos con l aversión 4.x para dar continuaidad al programa desde:
+	https://getbootstrap.com/docs/4.6/getting-started/download/
+
+
+Hasy dos formas de dscargar Bootstrap.
+
+1. La forma rapida.
+
+Con los archivos compilados, archivos fuentes y la opcion rapida es mediante CDN cargando Boostrap usando los CDN
+
+Tomamos la via rapida desde un archivo base:
+
+
+
+Descargamos desde la pagina de la docuentación:
+
+	https://getbootstrap.com/docs/4.6/getting-started/introduction/#starter-template
+
+2. La segunda forma es mediante una instalación en local 
+
+Para los proyectos personales con instalación local debemos ir a:
+
+	https://getbootstrap.com/docs/4.6/getting-started/download/
+
+
+Descargamos los archivos compilados
+
+Descomprimimos
+	La Carpeta CSS 
+
+El archivo bootstrap.css, contiene todo lo necesario de estilos para clas clases de columnas, los botones, normalmente este arvhico no se usa si no en su lugar se recomienda utiilizar 
+bbotstrap.min.css.
+
+Los demas archivos como bootstrap.css.map es un archivo de restreo que usan los compiladores SASS o LESS.
+
+El archivo bootstrap-grid.css, este archivo no interesa los componentes de boostrap, o funciones, pero nos interesa el sistema de columnas.
+
+Se recomienda el archivo comprimido.
+
+El archivo boos¿tstrap-reboot.css este archivo sirve para reinicializar todos los estilos de todas las etiquetas html, por que normalmente los navegadoes se asignan diferentes estilos a lo larbo del proyecto, para quitar esto se utiliza el reebot.
+
+
+Nuestra esructura basica de los proyectos ser:
+
+/index.html
+/css
+/js
+/img
+
+Jquery
+
+Boostrap emplea de modo nativo la libreria jQuery, para utilizr los modulos de efectos, slides recargas de contenido y para ello es necesario utilizar la versión completa para los proyectos locales.
+
+Descargamos desde el sitio oficial.
+
+Para la fecha del mes de marzo de 2024 la versión actual es: jQuery ver 3.7.1 desde;
+
+	https://jquery.com/download/
+
+La versión comprimida desde;
+	https://code.jquery.com/jquery-3.7.1.min.js
+
+La versión legible es desde:
+	https://code.jquery.com/jquery-3.7.1.js
+
+El archivo de mapeao
+	https://code.jquery.com/jquery-3.7.1.min.map
+
+
+Se puede excluir los modulos de Ajax y effecos para tener una versión sslim desde:
+	https://code.jquery.com/jquery-3.7.1.slim.min.js
+
+Version sin compresión:
+	https://code.jquery.com/jquery-3.7.1.slim.js
+
+Archivo de mapeo
+	https://code.jquery.com/jquery-3.7.1.slim.min.map
+
+Asi tambien se puede obtener jQuery usando npm y yarn
+
+Es necesario para los componentes dropdown u tooltip otro componente es necesarioutilizar la libreria puppor
+
+Desde:
+	https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.js
+Y la versión comprimida:
+	https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js
+
+La razon de haber incluido los archivos esta desde lapagina de la doucmentación en:
+	https://getbootstrap.com/docs/4.6/getting-started/contents/
+
+
+
