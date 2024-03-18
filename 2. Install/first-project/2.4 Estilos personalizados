@@ -1,0 +1,114 @@
+Estilos personalizados
+
+El archivo generado y compilado esta en css bajo el nombre estilos.css
+
+Por ejemplo si utilizamos una propiedad de gradiente en el archivo SASS, por ejemplo
+
+estilos.scss
+---
+
+.encabezado{
+	display: flex;
+	background-image: linear-gradient(red, blue);
+}
+
+
+Al compilarse con Koala obtendremos los prefijos correspondientes necesarias para los navegadores.
+
+La salida correspondiente sera
+
+estilos.css
+---
+.encabezado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(red), to(blue));
+  background-image: linear-gradient(red, blue); }
+
+/*# sourceMappingURL=estilos.css.map */
+
+
+Ahora si trabajamos con una propiedad nueva, 
+
+por ejeplo
+
+justify-content: center
+
+
+Al copilarse
+Se obtiene:
+
+	  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+
+
+Porejemplo para iniciar un proyecto se puede utilizar un patron de colores:
+
+//-----------------------------
+//			Patron de colores
+//-----------------------------
+
+$texto: red;
+$principal: blue;
+$secundario: orange;
+
+
+Utilizando estas tres variables este archivo no se visualizan, solo se definen las variables de los colores, y posteriormente se puede definir diferentes colores.
+
+Lo que estamos haciendo es definir variables
+
+
+$texto: red;
+$principal: blue;
+$secundario: orange;
+
+body{
+	background: $principal;
+	color: $texto;
+	border: 5px solid $secundario;
+}
+
+
+se definen usando el simbolo $ seguido de la variable y el valor
+
+es decir:
+
+ $nombre_variable: valor;
+
+ Con esto definimos las variables.
+
+ Al compilarse tenemos:
+-------------------------
+ body {
+  background: blue;
+  color: red;
+  border: 5px solid orange; }
+
+.encabezado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(red), to(blue));
+  background-image: linear-gradient(red, blue);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+/*# sourceMappingURL=estilos.css.map */
+
+---------------------------
+
+
+Estos son las ventajas de SASS usando los prefijos de navegadores y variables, posteriormente se veran funciones y mixes de los archivos css.
+
+Ahora debemos enlacar este archivo compilado dentro de nuestro proyecto
+
+Para nuestro archivos compilados siempre debe de ir posteriormente al archivo css/bootstrap.css
+
+Es decir primero se va a cargar el archivo de boostrap y posteriormente seran nuestros estilos, esto es con la finalidad de sobreescribir los estilos que queremos modificar de boostrap.
+
+Si deseamos cambiar un solo valor de variable cambiara completamente el diseño de todo el proyecto, unicamente cambiando un solo valor de variable.
+
+
