@@ -1,0 +1,37 @@
+2.3. Trabajo con Koala
+
+Ahora toca insertar los estilos personalizados, que boostrap tiene por defecto.
+
+Trabajaremos con SASS es un preprocesador css que permite trabajar con variables.
+
+Si utilizamos variables en los estilos de nuestro proyecto, podriamos en segundos cambiar la apariencia, transformado eso es eficiencia y productividad.
+
+Un sitio podria cambiar de apariencia y adaptarlo al nuevo proyecto con los colores que el cliente requiera.
+
+Para ello podremos trabajar con un archivo SASS directamente en la carpeta CSS. Lo recomedable es "scss" son los archisvos SASS.
+
+En Sublime text podremos cmabiar el lenaguaje para que adapte las funciones propias del lenguaje y para poder compilar este archivo y transformarlo en CSS vamos a utilizar Koala.
+
+Al abrir la aplicación del preprocesador, solamente resta configurar el archivo compilado, arrastramos la carpeta scss en el preprocesador y al hacer click derecho sobre el archivo establecemis la ruta del archivo compilado, con el nombre que debemos generar cualquier cambio.
+
+Si se realiza un cambio de manera autimatico, koala va a compilar y actualizar el archivo estilos.css
+.
+La opcion compilación automatica debe estar marcada para indicar a koala que al cambio reescriba el archivo estilos.css
+
+Las otras opciones pueden estar desmarcadas, solamente el autoprefix, y source map.
+
+Para trabajar con los prefijos de navegador, que son pequeños textos antes de las propiedades css para que los navegadores entiendas cierts propieddes.
+
+por ejemplo
+
+	display-flex
+
+Esta propiedad no corre en los diferentes navegadores. asi Chrome safari, utilizaba el prefix, -webkit-, Mozilla -moz-, -o- para opera, y -ms- para internet explorer.
+
+Para utilizar un gradiende, debe utilizar los prefijos para que cada navegador pueda procesarlo correctamente.
+
+Exste una entrada de internet con la referencia necesaria en:
+	https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=761:prefijos-css-de-navegador-chrome-firefox-iexplorer-opera-safari-webkit-moz-ms-o-ejemplos-cu01056d&catid=75&Itemid=203
+
+Asi si utilizamos una propiedad no soportada en todos los navheadores se deben crear cada entrada de prefijo para cada linea de navegadores, asi koala hara el trabajo por nosotros de manera automatica.
+
