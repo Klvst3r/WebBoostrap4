@@ -1,0 +1,27 @@
+2.5. Plugin Bootstrap
+
+Una de las herramienta para trabajar con bootsrap es la chuleta que es la información resumida de Bootrsap
+
+	https://hackerthemes.com/bootstrap-cheatsheet/
+
+
+Con todas las clases de Boostrap, la segunda herramienta es un plugin para trabajar con bootrsap en sublime text, 
+
+Para agregar este plugin llamado Bootstrap autocomplete que permite insertar las clases de bootstrap.
+
+Con ello Sublime al escribir btn, el mismo editor con el plugin nos dara las opcioines disponibles para trabajar con BT4
+
+Para instalarlo:
+
+Package Control : install packag
+
+Preferencias
+	Package Control
+			Install Package
+					Bootstrap 4 autocomplete
+
+En i caso tuve comlicaciones para instalarlo asi que lo descarge desde el sitio de github y lo coloque en la carpeta de plugins cerre el editor y al abrirlo nuevaente se cargan las funcionalidades de boostrap 4
+
+El sitio es:
+	https://github.com/webchun/bootstrap-4-sublime-autocomplete
+
