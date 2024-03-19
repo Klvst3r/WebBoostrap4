@@ -1,0 +1,26 @@
+
+//-----------------------------
+//			Patron de colores
+//-----------------------------
+
+$texto: red;
+$principal: white;
+$secundario: orange;
+
+body{
+	background: $principal;
+	color: $texto;
+	border: 5px solid $secundario;
+}
+
+
+
+
+
+
+
+.encabezado{
+	display: flex;
+	background-image: linear-gradient(red, blue);
+	justify-content: center
+}

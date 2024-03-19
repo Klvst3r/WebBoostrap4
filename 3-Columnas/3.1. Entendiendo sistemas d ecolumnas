@@ -1,0 +1,53 @@
+3.1. Entendiendo sistemas d ecolumnas
+
+Para visualizar correctamente en diversos dispositivos es necesario el siguiente meta en la pagina index.
+
+---
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+La mejor configuraciṕon es esta, recordando descargar los archivos compilados de Bootstrap.
+
+	https://getbootstrap.com/docs/4.6/getting-started/download/
+
+
+Los archivos necesarios son:
+
+	css/
+		- bootstrap.css (Estilos Css de bootstrap)
+		- bootstrap.min.css (Archivo para proyectos realies,comprimido)
+		- bootratp.css.map
+
+		- bootrasp-grid.css (sistema de columnas)
+		- bootrsap-grid.min.css (Arhivo comprimido del sistema de columnas)
+		- boostrap-reboot.css (Archivo de reinicio de los estilos de bootstrap)
+
+	js/ (Archivos de Js del proyecto)
+
+
+
+	img/ (Imagenes de proyectos)
+
+
+
+El sistema de Columnas es un ade las razones por las que este sistema se ha convertido en una opcion particular de su uso 
+
+. El sistema d eBT permite distribuir varios elementos, en multiples columnas, adaptado actualmente a Flexbox, con lo cual se alinean los elementos aahora tanto de manera vertical como de manera horizontal.
+
+Se mencionado que BT4 es ahora movile first, esdecir asume que lo mas importante son los dispositivos moviles., es decir se adapta primero a dispositivos pequeños.
+
+Resumiendo podemos decire que:
+
+ - El sistema de columnas de BT4 es el corazon de este framework
+ - Esta basado en Flexbox, 
+ - Es mobile First, parte de las pantallas pequeñas
+
+
+
+Las 12 reglas del sistema de columnas, se veran a continuación
+
+
+
+
+
