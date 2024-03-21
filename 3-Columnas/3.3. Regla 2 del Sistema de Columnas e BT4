@@ -1,0 +1,6 @@
+3.3. Regla 2 del Sistema de Columnas e BT4
+
+En BT4 Existen 2 tipos de contenedores, todo el contenido esta dentro de un contenedor principal.
+
+Regularmente existe un .container que envuelve todo el contenido, pero en ocaciones sera necesario emplear todo el ancho del sitio.
+
