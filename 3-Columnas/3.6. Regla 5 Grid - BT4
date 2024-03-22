@@ -1,0 +1,30 @@
+3.6. Regla 5 Grid - BT4
+
+Podemos tener como maximo 12 columnas dentro de una sola fila.
+
+La regla dice que podemos tener 12 columnas como maximo dentro de una fila
+
+Una fila puede contener como maximo 12 columnas, se pueden conectar mas de columnas dentro de una fila.
+
+Asi, para crear doce columnas, las columnas tienen que ser hijas directas de una columna.
+
+div es una etiqueta para contener elementos, y nosotros asignamos una clase llamada "cos".
+
+Podemos ocupar 4 columnas y todo el ancho disponible del conteneder.
+
+asi si tenemos que ocupar dos culumnas, cada uno utilizara 6 espacios de cada columna.
+
+---
+    <div class="container">
+      <div class="row">
+        <div class="col-6">Hola Klvst3r </div>
+        <div class="col-6">Hola Klvst3r </div>
+      </div>
+    </div>
+
+
+El numero de class="col-6" indica la cantidad d columnas que se vana autilizar de las 12 disponibles.
+
+Ocupara 6 espacio de los doce,    
+
+Para los estilos

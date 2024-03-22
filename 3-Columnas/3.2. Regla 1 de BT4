@@ -8,4 +8,7 @@ El sistema de columnas, BT4 basa su estrutura en 3 elementos, contenedor, filas 
 
 Regularmente en un contenedor div se le asigna la etiqueta container, luego dentro se coloca una etiqueta row, dentro de una etiqueta article , section, asunque se puede utilizar div de igual forma como elemento contendor. Dentro de la fila estas las columnas.
 
-En un sistema de columnas, se logran mediante un aconfiguración propia del framework  
+En un sistema de columnas, se logran mediante un aconfiguración propia del framework. 
+
+Vayamos a nuestro proyecto.
+

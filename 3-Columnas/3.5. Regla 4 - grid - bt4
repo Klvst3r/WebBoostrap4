@@ -1,0 +1,22 @@
+3.5. Regla 4 - grid - bt4
+
+Las columnas tienen que ser hijos directos de una fila.
+
+La columnas tienen que ser hijos directos de la etiqueta file
+
+----
+
+Dentro de las filas se tienen que crear las columnas.
+
+
+---
+<div class="container">
+      <div class="row">
+        <div class="col-12">Hola Klvst3r </div>
+        <div class="col-12">Hola Klvst3r </div>
+      </div>
+    </div>
+
+
+
+    

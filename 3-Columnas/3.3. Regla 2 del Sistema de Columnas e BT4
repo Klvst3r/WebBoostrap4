@@ -4,3 +4,7 @@ En BT4 Existen 2 tipos de contenedores, todo el contenido esta dentro de un cont
 
 Regularmente existe un .container que envuelve todo el contenido, pero en ocaciones sera necesario emplear todo el ancho del sitio.
 
+
+
+Contenedor Fluido, En pantallas pequeñas ocupan el 100%, pero el contenedor normal ocupa el 80% - 90$y el fluido, casi siempre se ajusta el tamaño completo disponble de la pantalla, se utiliza cuando queremos quenuestros elementos ocupen el ancho de la pantalla.
+

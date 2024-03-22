@@ -1,0 +1,22 @@
+3.4. Regla 3 Grid - BT4
+
+Las filas tienen que ser hijas directas de un contenedor.
+
+Esto significa que las columnas deben estar dentro d eun contenedor
+
+
+
+-----
+
+ <div class="container">
+      <div class="row">
+        <div class="col-12">Hola Klvst3r </div>
+      </div>
+    </div>
+
+
+La etiqueta container es hija de la etiqueta body.
+
+Se pueden crear multiples columnas dentro de una sola columna.
+
+
