@@ -30,4 +30,34 @@ Si se disminuye o aumentan las columnas, estas se distribuiran entre las disponi
 SM del contexto Small, 
 
 que empieza a partir de 576 px, la primera columna no ocupa 4 columnas que ocupe solamente 2, 
+Asi nuestro ejemplo queda:
+
+	<div class="container">
+      <div class="row">
+        <div class="col-4 col-sm-2">Primer columna </div>
+        <div class="col-4 col-sm-2">Segunda columna </div>
+        <div class="col-4 col-sm-8">Tercer columna </div>
+
+        
+      </div>
+    </div>
+
+
+    El siguiente contexto es MD que viene de las siglas Medium Device, si el rango no sobrepasa los 768px, entonces se aplica el contexto sm.
+
+     <div class="container">
+      <div class="row">
+        <div class="col-4 col-sm-2 col-md-10">Primer columna </div>
+        <div class="col-4 col-sm-2 col-md-1">Segunda columna </div>
+        <div class="col-4 col-sm-8 col-md-1">Tercer columna </div>
+
+        
+      </div>
+    </div>
+
+
+En este contexto, si se sobrepasa delo s768px entonces se aplicara el contexto md, asi se activa el contexto md y la primera columna ocupara 10 espacios, la segunda 1 espacio y la tercera 1 columna.
+
+
+
 
