@@ -11,3 +11,45 @@ La clase
 
 
 El contenido interno de cada columna se adaptara al ancho necesario dentro del sistema de 12 columnas	
+
+
+Podemos modificar la medida de una columna dependiendo del tamaño de pantalla
+
+
+El conteto LG del contexto Large
+
+Empieza a los 992px, tenemos que usar el constexto col-lg-
+
+Al estar en el contexto LG, queremos que ocupe 5 columnas, y que la segunda quedando 2 columnas restantes.
+
+
+con esto el tamaño de las columnas cambia teniendo el contexto siguiente:
+
+  <div class="container">
+      <div class="row">
+        <div class="col-4 col-sm-2 col-md-10 col-lg-5">Primer columna </div>
+        <div class="col-4 col-sm-2 col-md-1 col-lg-5" >Segunda columna </div>
+        <div class="col-4 col-sm-8 col-md-1 col-lg-2">Tercer columna </div>
+
+        
+      </div>
+    </div>
+
+
+
+Existe un contexto adicional, SL del contexto Extra Large empezando con pantallas de 1200px para arriba
+
+Quedando todos los contexto
+
+  <div class="container">
+      <div class="row">
+        <div class="col-4 col-sm-2 col-md-10 col-lg-5 col-xl-2">Primer columna </div>
+        <div class="col-4 col-sm-2 col-md-1 col-lg-5 col-xl-1" >Segunda columna </div>
+        <div class="col-4 col-sm-8 col-md-1 col-lg-2 col-xl-9">Tercer columna </div>
+
+        
+      </div>
+    </div>
+
+
+ 
