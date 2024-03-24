@@ -1,0 +1,33 @@
+3.10 Regla 9 Grid de BT4
+
+ Podemos modificar la medida de una columna dependiendo del tamaño de pantalla
+
+ Esta es la caracteristica mas importante del Framework de Bootstrap
+
+ Se empezara siempre desde la vista movil. Desde las hgerramientas de desarrollo de Chrome
+
+ Los contextos 
+
+ Bootstrap maneja 5 contextos o 5 tamañps de pantalla
+
+ Por defecto
+
+ 	Dimensiones			Clase 		Tamaño
+
+ 		>=0 		    col-* 		Por defecto
+ 		>=576px 		col-sm-* 	SM
+ 		>=768px 		col-md-* 	MD 
+ 		>=992px 		col-lg-* 	LG
+ 		>=1200px 		col-xl-* 	XL
+
+
+Cuando el tamaño de pantalla van aumentando de tamalo, se van a acomodando de acuerdo al numero de columnas.
+
+Entonces.
+
+Si se disminuye o aumentan las columnas, estas se distribuiran entre las disponibles.
+
+SM del contexto Small, 
+
+que empieza a partir de 576 px, la primera columna no ocupa 4 columnas que ocupe solamente 2, 
+

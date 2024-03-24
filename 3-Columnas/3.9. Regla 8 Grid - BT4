@@ -7,4 +7,7 @@ La clase
 	Nos permite crear columnas de proporciones identicas
 
 
-		
+	Asi si no incluimos el numero de columnas distribuira el umero de columnas entre las 12 columnas disponibles
+
+
+El contenido interno de cada columna se adaptara al ancho necesario dentro del sistema de 12 columnas	
