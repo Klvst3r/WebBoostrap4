@@ -1,0 +1,24 @@
+3.12 Regla 11 dGrid de BT4
+
+Se pueden crear columnas vacias
+
+A manera de ejemplo habra dos cuolumnas de separación.
+
+Para separar las columnas podemos crear una tercer columna en medio
+
+Para ello existe un aclase especial llamada offset, permite crear columnas invisibles.
+
+ <div class="container">
+      <div class="row">
+        <div class="col-4">Primer columna </div>
+        <div class="col-4 offset-2" >Segunda columna </div>
+        
+
+        
+      </div>
+    </div>
+
+
+Offset lo que hace es mover un determinado numero de columnas a la derecha, esto genera un codigo mas limpio
+
+Si queremos que en elontexto SM de 576px sea con una separacion de 2 columnas
