@@ -1,0 +1,121 @@
+3.13 Regla 12 Grid de BT4
+
+Se pueden crar columnas anidadas
+
+
+Por ejemplo para un diseño inicial podremos utilizar un diseño con 3 columnas de de 4 col de bt4 cada una.
+
+Dentro de cada columna se puede crear dos columnas dentro de una columna inicial
+
+Quedando nuestro sistema de columnas definido de la siguiente manera.
+
+---
+
+    <h1>Columnas anidadas</h1>
+     
+      <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="row">
+            <div class="col-2">Columna 1</div>
+            <div class="col-10">Columna 2</div>
+          </div>
+        </div>
+        <div class="col-6">Segunda columna </div>
+        
+
+
+Se pueden reaordenar las columnas
+
+Flexbox permite reordenar el orden de los elementos. BT4 utiliza esta caracteristica.
+
+Para ver este concepto podremos revisar lo siguiente:
+
+Con este precepto podemos hacer que en ciertas resoluciones o tamaños 
+
+
+
+   <br>
+    <h1>Reordenando Columnas</h1>
+     
+      <div class="container">
+      <div class="row">
+        <div class="col-2 bg-primary"> Col 1</div>
+        <div class="col-2 bg-secondary">Col 2</div>
+        <div class="col-2 bg-success ">Col 3</div>
+        <div class="col-6 bg-danger order-md-first">Col 4</div>
+      </div>
+    </div>
+
+
+
+Existe otra opcion donde podemos colocar una columna y hacer que se muestre ultimo.
+
+
+   <br>
+    <h1>Ultima Columna</h1>
+     
+      <div class="container">
+      <div class="row">
+        <div class="col-2 bg-primary order-md-last"> Col 1</div>
+        <div class="col-2 bg-secondary order-sm-last">Col 2</div>
+        <div class="col-2 bg-success order-lg-last">Col 3</div>
+        <div class="col-6 bg-danger ">Col 4</div>
+      </div>
+    </div>
+
+
+  Se debe tener en consideración que todas las columnas tienen un valor inicial de 0
+
+
+    <br>
+    <h1>Ordenamiento por valor</h1>
+     
+      <div class="container">
+      <div class="row">
+        <div class="col-2 bg-primary order-1"> Col 1</div>
+        <div class="col-2 bg-secondary order-3">Col 2</div>
+        <div class="col-2 bg-success order-2">Col 3</div>
+        <div class="col-6 bg-danger order-4">Col 4</div>
+      </div>
+    </div>
+
+
+Asi si queremos que la ultima columna se visualize primero, y asi todas en orden descendente tendriamos:
+
+
+   <br>
+    <h1>Ordenamiento por valor</h1>
+     
+      <div class="container">
+      <div class="row">
+        <div class="col-2 bg-primary order-4"> Col 1</div>
+        <div class="col-2 bg-secondary order-3">Col 2</div>
+        <div class="col-2 bg-success order-2">Col 3</div>
+        <div class="col-6 bg-danger order-1">Col 4</div>
+      </div>
+    </div>
+
+
+Se puede utilizar el ordenamiento del 0 al 12 en la numeración de columnas    
+
+Bajo un escenario de contexto podemos reasignar los valores
+
+  <br>
+    <h1>Ordenamiento por valor</h1>
+     
+      <div class="container">
+      <div class="row">
+        <div class="col-2 bg-primary order-md-3"> Col 1</div>
+        <div class="col-2 bg-secondary order-md-4">Col 2</div>
+        <div class="col-2 bg-success order-md-2">Col 3</div>
+        <div class="col-6 bg-danger order-1">Col 4</div>
+      </div>
+    </div>
+
+
+
+BT4 ordenara de menor a mayor, si no se tiene una especificación o saltear sin un ordenamiento consecutivo.
+
+
+    
