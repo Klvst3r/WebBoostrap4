@@ -1,0 +1,62 @@
+4.1 Entendiendo las medidas REM
+
+ COn Bt4 podemos modificar la apariencia de los textos, con negrita, cursivas, parrafos y encabezados y elementos de las listas.
+
+ Podemos aplicar estilos de forma responsiva.
+
+ Podemos aplicar estilos a un contexto, incluso si tenemos varios escenarios o tamaños de la pantalla, esos estilos podran modificarse de acuerdo al tamaño de la pantalla.
+
+ Asi una página se observa de una forma en la versión movil, pero en verisones superiores, la apariencia, el color cambia totalmente, BT viene preparado para esto. Todo esto in tocar archivos personalizados de CSS.
+
+ Existe un detalle, ya que las clases de CSS de BT tienen un valor en REM, como la propiedad padding o margin, incluso el tamaño de texto esta definido, con REM, y hacemo resto que con una tipografia debemos estar seguros que sabemos lo que significa REM
+
+ REM
+
+ Es una medida relativa basada en el tamaño de fuente que tenga la etiqueta HTML.
+
+ De esta manera si inspeccionamos una página, y revisamos la etiqueta <html> todo lo que este dentro, del contenido sera la unidad de medida REM
+
+ la etiqueta html tiene definido un tamaño de 16px por defecto, que es el tamaño definido de texto, si recordamos la definición, asi que 1 em es la unidad de medida relativa que tenga la etiqueta html.
+
+ Asi y si no se ha modificado el tamaño del texto en esta etiqueta el tamaño definido es de 16px.
+
+
+ 16 px = 1rem.
+
+ O mejor dicho
+
+ 1rem = 1px.
+
+ Esto de manera regular 1 rem es igual a 16px.
+
+
+A manera de ejemplo tenemos el siguiente parrafo.
+
+
+  <h1>Medida REM</h1>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Mollitia fugit voluptates officia velit, placeat necessitatibus corporis nam eaque nesciunt odit, consectetur, numquam dolorem dolore rem. Velit repellat corrupti autem, nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illo, odio vero earum distinctio blanditiis voluptates id dolores, sapiente necessitatibus dignissimos sequi tempora in. Incidunt magnam sed asperiores laboriosam ipsa?</p>
+
+
+
+
+En la etiqueta html, en la sub-vista "Computed" podemos ver la propiedad CSS del texto, y podremos verificar el valor de este valor que es 16px, por que el texto toma por defecto del tamaño asignado 16px
+
+Si cambiamos los valores CSS de nuestro estilos para el texto de la siguiente manera:
+
+p {
+	font-size: 1rem;
+}
+
+h1{
+	font-size: 2rem;
+}
+
+La etiqueta P no cambia por que hereda ma misma medida que la etiqueta html, siendo la que se modifica la etiqueta h1
+
+De esta manera h1 vale 32px, 
+
+Asi si nosotro definimos en tamaño menor la fuente de la etieuqte html bajaran los valores de los textos automaticamente
+
+asi p valdra 10px y h1 valdra 20px
+

@@ -1,0 +1,159 @@
+Preprocesadores
+
+Su nombre se corresponde con Syntactically Awesome Style Sheets, que podríamos traducir como Hojas de Estilo Sintácticamente Alucinantes, y  supone toda una declaración de intenciones. En este artículo, os explicamos qué son los preprocesadores CSS y qué tiene de especial Sass para ser el más utilizado actualmente.
+
+¿Qué son los preprocesadores CSS?
+-----------------------------------
+
+Podríamos definir los preprocesadores CSS como herramientas que posibilitan traducir hojas de estilo comunes a un código estándar y reconocible por los navegadores web. Estas herramientas disponen de utilidades que no están en el lenguaje CSS y, por tanto, no las interpretan los navegadores directamente, como pueden ser variables, anidación de selectores, funciones (mixins), etc. Creando un preprocesador lo que conseguimos es economizar tiempo, ya que escribimos menos código. Además, su mantenimiento es fácil y resulta más comprensible, debido básicamente a su optimizada organización.
+
+Por el contrario, crear un preprocesador implica aprender un nuevo lenguaje y escribir código poco común, que debe ser compilado en CSS y que afecta al flujo de desarrollo. Este código, que no entiende el navegador, deberemos traducirlo antes de llevar un sitio web a producción. Por suerte para nosotros, existen alternativas para su optimización y traducción que harán que ahorremos tiempo.
+¿Por qué Sass?
+
+Podríamos escoger otros preprocesadores, como Less o Stylus, ya que todos al final ofrecen las mismas utilidades, pero Sass es el preprocesador más utilizado y demandado por la comunidad de desarrolladores. Varios frameworks como Bootstrap lo utilizan y, además, cabe la posibilidad de que podamos heredar proyectos que lo usen, siendo de enorme beneficio aprender este preprocesador.
+¿Cómo es la sintaxis de Sass?
+
+Para aprender Sass podríamos hablar de dos partes principales. En la primera, aprenderíamos a trabajar con su código y su sintaxis, y  en la segunda, lo aplicaríamos a nuestro flujo de trabajo.
+
+Los dos tipos de sintaxis para escribir el código de Sass son los siguientes:
+
+    Sintaxis Sass. Es algo diferente a como sería la de CSS estándar. No tiene muchas diferencias, pero por ejemplo, no tenemos que poner los puntos y comas al final de los valores de propiedades, no se usan las llaves y en su lugar se realizan indentados, etc.
+    Sintaxis SCSS. Esta es una sintaxis muy próxima a la sintaxis del propio CSS. De hecho, CSS es código SCSS válido, aunque con algunos elementos extra.
+
+Alejarse del lenguaje CSS y tener que aprender uno nuevo, aunque pueda resultar más rápido escribir con sintaxis Sass, es menos recomendable. Pero si usamos SCSS, tenemos la ventaja de utilizar el código CSS de siempre, totalmente válido para el preprocesador y además, podremos utilizar, tanto los conocimientos que ya teníamos, como posibles códigos de estilo de los cuales ya disponíamos de otros proyectos.
+
+Como creemos que estar más cerca del lenguaje CSS será más entendible por todos, utilizaremos las sintaxis SCSS.
+
+Vamos a ver un ejemplo de uso de variables sobre la sintaxis de Sass.
+
+$color-fondos: #F55;
+h1 {
+   background-color: $color-fondos;
+ }
+
+Observamos cómo declaramos una variable para luego usarla en un selector. Lógicamente, no se podría usar en CSS porque estas declaraciones no existen.
+
+Recordemos que CSS ya incorpora variables, aunque se usa otra sintaxis. La desventaja es que no todos los navegadores lo interpretan, a no ser que se implemente PostCSS con CSS Next.
+
+El resultado, cuando compilemos el código anterior, sería el siguiente código estándar:
+
+h1 {
+   background-color: #F55; }
+
+    En próximos artículos, explicaremos cómo usar Sass en detalle y cómo instalarlo.
+
+
+
+Cómo instalar Sass
+-------------------    
+
+En el artículo que publicamos recientemente sobre Sass, veíamos qué era y qué sintaxis tenía. Descubríamos sus principales características, que lo hacen destacable en la comunidad de desarrolladores y lo prefieren frente otros preprocesadores CSS, como Less o Stylus. Ahora que ya lo conocemos mejor, a continuación veremos cómo instalar Sass, muy relacionado con el Cloud Computing, y empezar a utilizarlo.
+
+Antes de instalar Saas, hay que saber que existen dos alternativas básicas para usarlo:
+
+    Preprocesar con herramientas de interfaz gráfica, por ejemplo Prepros, CodeKit o Scout-App. Con esto, trabajar es más sencillo y podemos prescindir de la línea de comandos, aunque es necesario utilizar un programa en concreto y con la desventaja de que sea de pago.
+    Usar la línea de comandos para preprocesar. Es la que utilizan la mayoría de desarrolladores. No requiere ningún tipo de licencia, el terminal se encuentra en nuestro sistema operativo y nos deja personalizar todo el comportamiento del preprocesador.
+
+
+
+Instalar Sass
+
+Su instalación dependerá del sistema operativo que estemos utilizando, aunque lo primero que tenemos que hacer es alojar Ruby en nuestro ordenador, ya que el compilador de Sass está escrito en este lenguaje de programación. ¿Dónde puedes conseguir Ruby en función de tu sistema operativo?
+
+    Windows. en este enlace encontrarás el instalador para Windows.
+    Linux. A través del gestor de paquetes de la distribución que tengas instalada, apt-get, yum, etc.
+    Mac. Viene ya instalada y no necesitarás nada más.
+
+Cuando lo tengamos instalado, tendremos el comando gem, que instala paquetes basados en Ruby. Lo usaremos para instalar Sass, pero hay diferencias entre los distintos sistemas operativos, como ejemplificamos a continuación:
+
+    Windows. Abrimos un terminal, por ejemplo el que viene por defecto, con “cmd” y lanzamos el comando.
+
+    	gem install sass
+
+    Linux. Usamos el terminal y tecleamos el comando.
+
+    	sudo gem install sass --no-user-install
+
+    Mac OS X. Utilizarás generalmente sudo. Ojo con los permisos.
+
+    	sudo gem install sass
+
+    Una vez instalado Sass, comprobaremos si está disponible con el comando:
+
+    	sass -v
+
+    Si nos devuelve la versión, lo tendremos instalado.
+
+
+Compilar archivos de Sass a CSS
+-----------------------------
+
+Para compilar el código Sass y convertirlo a CSS estándar, te debes situar con el terminal en la carpeta donde esté el archivo con el código SCSS. A continuación, lanzas el siguiente comando (archivo origen-archivo destino):
+
+sass ej.scss ej-compilado.css
+
+Observarás que después de su ejecución,  crea un archivo adicional llamado ej-compilado.css.map y que nos sirve para que el navegador nos ayude a la hora de depurar.
+Compilar Sass de manera automática con un watcher
+
+Compilar Sass es muy rápido, pero ¿qué pasa si cambias tu código cada poco? Por suerte, podemos automatizar el proceso con un watcher, que no es más que el encargado de vigilar tu código cada vez que se guarda y que se compila al instante. De este modo, ahorras tiempo entre compilación y compilación.
+
+Hay que indicar también que el watcher nos permite observar un único archivo o todos los de una carpeta.
+Vigilar las modificaciones de un archivo en concreto
+
+Se consigue aplicando la opción –watch, con un archivo origen y otro destino. Como este ejemplo:
+
+sass --watch origen.scss destino.css
+
+Vigilar todos los archivos de una carpeta
+
+Indicando la carpeta origen y destino, como en el siguiente ejemplo, podremos vigilar todos los archivos de una carpeta.
+
+sass --watch carpetaorigen:carpetadestino
+
+Nuestra sugerencia es crear dos carpetas. Una que se llame «sass» en la que pondrás el código fuente con archivos de extensión «.scss» y otra que puedes llamar «css», donde pondremos el  código compilado.
+
+Echa un vistazo a este esquema:
+
+Vigilar todos los archivos de una carpeta
+
+Con el siguiente comando, lanzarás el watcher.
+
+sass --watch sass:css
+
+Creado el código SCSS en la carpeta sass, los archivos compilados se irán almacenando en la carpeta de destino. La estructura quedaría de la siguiente manera:
+
+Vigilar todos los archivos de una carpeta
+
+Watcher también podría evitar la compilación de ciertos archivos, simplemente nombrándolos al principio con un guión bajo. Algo como _variables.css.
+Usar los archivos de código generado
+
+Como el código SCSS no es compatible con los navegadores, tendremos que enlazar el generado en el index.html de esta forma:
+
+<link rel="stylesheet" href="css/estilo.css">
+
+Si todo es correcto, verás cómo funciona perfectamente.
+
+    Con lo que hemos visto, ya puedes iniciarte en el uso de Sass. Hemos creado un entorno de desarrollo amigable que permite una compilación de manera automática. Tan solo queda practicar  el lenguaje para sacarle el máximo provecho en nuestros desarrollos.
+
+Ahora que sabes cómo instalar Sass y has aprendido a usarlo, estar más cerca de ser un maestro del Cloud Computing.    
+
+
+documentación
+
+	https://colaboraeducacion30.juntadeandalucia.es/educacion/colabora/documents/24450794/24476053/Preprocesadores+CSS.pdf/82658856-055d-11c7-2419-076a39350f44?version=1.0
+
+
+Referencias:
+	https://styde.net/sass-pre-procesador-de-css/
+
+	https://es.linkedin.com/advice/0/how-can-css-preprocessors-improve-your-web-kkgwc?lang=es
+
+	https://dev.to/theriusblackers/aprender-a-usar-sass-1-parte-descarga-y-instalacion-1ji3
+
+	https://kinsta.com/es/blog/buenas-practicas-css/
+
+	https://www.onworks.net/es/software/linux/app-css-preprocessor
+
+	Alternativa de instalación
+
+		https://sourceforge.net/projects/csspp/
