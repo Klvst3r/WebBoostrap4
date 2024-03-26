@@ -157,3 +157,96 @@ Referencias:
 	Alternativa de instalación
 
 		https://sourceforge.net/projects/csspp/
+
+
+
+Complemente del primer tema
+
+Para calcular el valor de 2 rem es de 32px, por que
+
+1rem = 16px
+
+
+Que pasa a la etiqueta html le asignamo otro valor.
+
+
+por ejemplo
+
+html = 10px
+
+por eso ahora 
+
+p = 10px
+
+h1 = 20px
+
+
+Al verificar las propiedades computadas, tenemos los valores de font-size
+
+Asi si se cambia el valor de html, los valores seran relativos respecto a esta unidad de medida rem.
+
+El valor REM no solo se  aplica a texto, se puede aplicar a borde
+
+por ejemplo
+
+
+
+html{
+    font-size: 10px;
+}
+
+p {
+    font-size: 1rem;
+}
+
+h1{
+    font-size: 2rem;
+    border = .5 rem solir red;
+}   
+
+
+
+Ahora tenemos la mitad del valor, este valor no solo se palica a esto sino por ejemplo al padding
+
+
+h1{
+    font-size: 2rem;
+    border = .5 rem solir red;
+    padding = 1rem;
+}   
+
+
+Tambien podemos usar la propiedad margin
+
+
+h1{
+    font-size: 2rem;
+    border = .5 rem solir red;
+    padding = 1rem;
+    margin: 3rem;
+}   
+
+
+Esto nos beneficia en que podemos modificar los valores de los elemenos cambiando solo el valor de la etiqueta html, Si nosotros definimos para movil los valores iniciales, podremos ir vairando los contexto hacia pantallas mas grandes, todo esto es gracias a trabajar en unidades relativas.
+
+
+
+Si nosotros trabajamos ahora con los Media Queries
+
+por ejemplo
+
+@media(min-width: 768px){
+
+    html{
+     font-size: 18px;
+    }
+    
+}
+
+Ahora podemos decir que cuando nuestra pantalla, se le asigna una medida de 768 para arriba, se definiran las siguientes medidas
+
+
+Al pasar de una resolucion de 768px ahora cambia el valor de las fuentes., aumenta el valor del borde por que su valor ha cambiado.
+
+
+

@@ -13,13 +13,25 @@ Estilos de prueba
 /*# sourceMappingURL=estilos.css.map */
 
 html{
-  font-size: 10px;
+    font-size: 10px;
 }
 
 p {
-  font-size: 1rem;
+    font-size: 1rem;
 }
 
 h1{
-  font-size: 2rem;
-}
+    font-size: 2rem;
+    border = .5 rem solir red;
+    padding = 1rem;
+    margin: 3rem;
+} 
+
+
+@media(min-width: 768px){
+
+    html{
+     font-size: 18px;
+    }
+    
+}  

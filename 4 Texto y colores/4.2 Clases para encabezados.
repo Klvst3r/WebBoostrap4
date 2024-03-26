@@ -1,0 +1,19 @@
+4.2 Clases para encabezados.
+
+La sprimeras clases nativas de BT4, un encabezado es cuando manejamos las etieutas del h1 al h6
+
+Si colocamos h1
+
+Esto sirve por si tenemos un parrafo, 
+
+Quedando
+
+---
+    <h1>Titulo h1</h1>
+
+    <p class="h6">Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Mollitia fugit voluptates officia velit, placeat necessitatibus corporis nam eaque nesciunt odit, consectetur, numquam dolorem dolore rem. </p>
+
+
+
+
+   <br>
