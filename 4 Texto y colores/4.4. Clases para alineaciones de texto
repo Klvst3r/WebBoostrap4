@@ -1,0 +1,83 @@
+4.4. Clases para alineaciones de texto
+
+BT4 En las alineaciones de Texto, permite hacerlo con ciertas clases, tambien podemos alinear el contenido en base al contexto, con simples clases.
+
+Para hacerlos trabajaremos con un parrafo.
+Aleneación a la izquierda
+
+
+   <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab rerum inventore iusto est quae quod quos numquam id. Sit, explicabo. Magnam totam voluptatum molestiae, quasi doloremque. In quisquam explicabo harum?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi totam corporis nulla quasi, impedit doloribus explicabo tenetur eveniet, id, placeat et amet voluptatum voluptate, quod. Ex eaque pariatur quisquam under</p>
+
+Alineación a la derecha
+
+
+   <p class="text-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab rerum inventore iusto est quae quod quos numquam id. Sit, explicabo. Magnam totam voluptatum molestiae, quasi doloremque. In quisquam explicabo harum?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi totam corporis nulla quasi, impedit doloribus explicabo tenetur eveniet, id, placeat et amet voluptatum voluptate, quod. Ex eaque pariatur quisquam under</p>
+
+
+Texto centrado
+
+
+   <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab rerum inventore iusto est quae quod quos numquam id. Sit, explicabo. Magnam totam voluptatum molestiae, quasi doloremque. In quisquam explicabo harum?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi totam corporis nulla quasi, impedit doloribus explicabo tenetur eveniet, id, placeat et amet voluptatum voluptate, quod. Ex eaque pariatur quisquam under</p>
+
+
+Justificación
+  <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab rerum inventore iusto est quae quod quos numquam id. Sit, explicabo. Magnam totam voluptatum molestiae, quasi doloremque. In quisquam explicabo harum?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi totam corporis nulla quasi, impedit doloribus explicabo tenetur eveniet, id, placeat et amet voluptatum voluptate, quod. Ex eaque pariatur quisquam under</p>
+
+Esto aparente no tiene utilidad, pero a la hora de diseñar puede ser muy util por que puede que necesitemos, alineación no solo de texto, sino de ciertos elementos.
+
+Podemos usar las clases y modificarlos con ciertos modificadores.
+
+Como por ejemplo
+
+
+<p class="text-left">Left aligned text on all viewport sizes.</p>
+<p class="text-center">Center aligned text on all viewport sizes.</p>
+<p class="text-right">Right aligned text on all viewport sizes.</p>
+
+<p class="text-sm-left">Left aligned text on viewports sized SM (small) or wider.</p>
+<p class="text-md-left">Left aligned text on viewports sized MD (medium) or wider.</p>
+<p class="text-lg-left">Left aligned text on viewports sized LG (large) or wider.</p>
+<p class="text-xl-left">Left aligned text on viewports sized XL (extra-large) or wider.</p>
+
+
+
+---
+
+
+    <h1>Alineación por contexto</h1>
+
+    <p class="text-center text-sm-right text-md-left text-lg_center">Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Itaque ducimus provident animi aut laudantium autem eaque quo fuga quae at inventore, consequuntur sunt temporibus nobis praesentium perferendis maiores vel. Alias.</p>
+
+
+
+
+
+
+
+
+ Referencias
+ -----------
+
+
+Referencia de alineación
+https://getbootstrap.com/docs/4.6/utilities/text/#text-alignment
+
+
+Con esto se puede cambiar la alineación dependiendo del contexto.
+
+Podremos recurrir a la guia de Hackerthemes
+	https://hackerthemes.com/bootstrap-cheatsheet/
+
+	https://www.creative-tim.com/cheatsheet/bootstrap4
+
+	https://www.scribd.com/document/461241949/Bootstrap-4-Cheat-Sheet-The-ultimate-list-of-Bootstrap-classes-pdf
+
+
+
+
+La version 5 esta situaca en:
+	https://bootstrap-cheatsheet.themeselection.com/
+		
+Para los temas de bootstrap podemos recurrir a:
+	https://hackerthemes.com/bootstrap-themes/
+

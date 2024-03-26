@@ -1,0 +1,27 @@
+4.3.Clases para titulos destacados
+
+BT4 Nos regala etiquetas para nuestros encabezados,
+
+Habra situaciones donde necesitamos secciones de encabezados, con teto mas grande.
+
+Las clases son display, para un titulo destacado, teniendo desde display 1 hasta Display 4
+
+
+---
+
+ <h1>Clases para encabezados</h1>
+
+  <p class="display-1">Texto para encabezado</p>
+
+
+   <br>
+
+
+
+ Esto facilita para los supertitulos, con la clase "display"
+
+
+
+ Referencias de documentacion
+    https://getbootstrap.com/docs/5.0/examples/cheatsheet/
+    
