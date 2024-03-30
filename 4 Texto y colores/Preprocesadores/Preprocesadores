@@ -54,7 +54,89 @@ Antes de instalar Saas, hay que saber que existen dos alternativas básicas para
     Preprocesar con herramientas de interfaz gráfica, por ejemplo Prepros, CodeKit o Scout-App. Con esto, trabajar es más sencillo y podemos prescindir de la línea de comandos, aunque es necesario utilizar un programa en concreto y con la desventaja de que sea de pago.
     Usar la línea de comandos para preprocesar. Es la que utilizan la mayoría de desarrolladores. No requiere ningún tipo de licencia, el terminal se encuentra en nuestro sistema operativo y nos deja personalizar todo el comportamiento del preprocesador.
 
+    Las interfaces graficas son la siguientes:
+        https://prepros.io/downloads
+        https://scout-app.io/  - Open Source
 
+
+
+ Instalar Scout App
+    https://askubuntu.com/questions/1219675/how-do-i-install-the-scout-app
+
+
+    1. Unzip the file: unzip LIN64_Scout-App_2.18.16.zip
+    2. cd Scout-App
+    3. ./scout-app
+
+    Will run without problems i do this at this moment.
+
+        It needs sudo apt-get install libgconf-2-4 to be run/installed on Linux distributions
+
+
+        https://github.com/scout-app/scout-app/issues/8
+
+        https://tutorialforlinux.com/2022/07/21/step-by-step-scout-app-debian-installation/
+
+
+
+        https://tutorialforlinux.com/2022/07/21/step-by-step-scout-app-debian-installation/
+
+        1. Terminal QuickStart
+
+            How to QuickStart with Command Line on Debian
+            Here Bash Shell Debian QuickStart Guide
+
+
+        2. Downloading Scout App
+
+            Download Scout App for Debian GNU/Linux
+            Here Get Scout App .zip for Debian
+
+
+
+
+        3. Installing Scout App
+
+            Now to Install Scout App on Debian
+            Extract the Archive directly into the Target with:
+
+                    sudo unzip -d /opt/ ~/Downloads/*Scout-App*.zip
+
+
+            But if you are in Trouble to Find the Location on Terminal then See: How to Access Downloads Folder from Browser.
+            Then Set the SuperUser as Owner with:
+
+                    sudo chown -R root:root /opt/Scout-App
+
+            Finally, Make a Symlink to Easy Launching from Shell:
+
+
+                    sudo ln -s /opt/Scout-App/Scout-App /usr/local/bin/Scout-App
+
+            If Got “User is Not in Sudoers file” then Look: Solution 
+
+
+
+        4. Launching Scout App
+
+            Now, from Shell Start Scout App simply with:
+            
+
+                    Scout-App
+
+            How to Create App Launcher on Main Menu
+            Here Make Launcher for Menu Guide
+            Making a Launcher on Main Menu on Linux Desktops
+
+            So Now I’m truly Happy if My Guide could Help you to QuickStart with Scout App on Debian!
+
+
+
+
+
+
+
+            
 
 Instalar Sass
 
