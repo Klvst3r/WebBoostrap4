@@ -132,6 +132,36 @@ Antes de instalar Saas, hay que saber que existen dos alternativas básicas para
 
 
 
+Crear nuestro Launcher para la Aplicación Instalada
+
+Para Instalar nuestra aplicación desde nuestro entorno con KDE 
+
+1. Debemos hacer click derecho cobre el Icono de Inicio de nuestro escritorio Plazama y click sobre la opción Editar Aplicaciones...
+
+2. En el menu seleccionar Nuevo elemento (new Item), escribiendo el nombre del elemento.
+
+3. Seleccionamos el grupo de la aplicación al que deseamos que pertenezca.
+    En nuestro caso o haremos dentro del grupo Development y le colocamos los siguientes datos:
+
+        Name: Scout App
+        Descriptión: CSS Preprocessor
+        Comment: CSS Preprocessor for KDE
+        Command: /opt/Scout-App/Scout-App
+
+4. Click sobre el cuadro para asignarle un icono
+
+                Dentro de la carpeta de instalación existe una carpeta de imagenes con los icoos que podemos seleccionar.
+
+5. Guardamos
+
+6. De ahora en adelante ya podemos ejecutar la aplicación recien creada.
+
+
+
+    Referencia 
+        https://fedoreando.wordpress.com/2009/03/11/anadir-un-nuevo-lanzadorelemento-al-menu-de-kde/
+        https://www.youtube.com/watch?v=g6AcOI-bLBI
+
 
 
 
