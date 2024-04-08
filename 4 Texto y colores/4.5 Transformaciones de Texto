@@ -3,3 +3,21 @@
 
 Para transformaciones de texto, por ejemplo que un encabezado o algun titulo sea siempre en mayuscula, los que trabajamos en diseño, podremos colocar algo como:
 
+
+Mayusculas 		- text-uppercae
+minusculas		- text-lowercase
+Letra capital	- text-capitalize
+
+
+Agragando la clase 	.font.weight-bold
+
+quedando
+	<h1 class="text-uppercase font-weight-bold">Traformación de texto</h1>
+
+
+Para ser cursiva le agregariamos la clase
+	.font-italic
+
+Para reducir el texto en un 80%
+
+		    Hola soy un titulo en <span class="small">Texto menor</span>
