@@ -1,0 +1,25 @@
+4.6 Trabajando con colores
+
+De manera general todo el sitio se basa generalmente en un diseño y en especifico en un logo, los colores se toman de base y con base al logo.
+
+Todo parte del logo., asi se parte siempre de los colores base o de la paleta de colores de acuerdo ak patron inicial, tomando un color inicial y un secundario.
+
+
+
+BT4 Utiliza 6 colores a traves de sus respectivas clases 
+
+Primary		-	.text-primary
+Secondary	-	.text-secondary
+Success		-	.text-success
+Danger		-	.text-danger
+Warning		-	.text-warning
+Info		-	.text-info
+
+Light 		-	.text.light
+Dark 		-	.text-dark
+Muted		-	.text-muted
+White 		-	.text-white
+
+
+
+
