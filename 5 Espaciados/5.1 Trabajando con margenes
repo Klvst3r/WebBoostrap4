@@ -1,0 +1,108 @@
+5.1 Trabajando con margenes
+
+
+Los espaciados se crean siempre, con margin y padding para espaciado interno y externo de los elementos 
+
+Clases para Margin y Padding
+
+
+Propiedad 				Lado 						Tamaño
+					Vacio = Los 4 lados				0 = 0
+						t = top 					1 = .25rem
+						r = right 					2 = .5rem
+m = margin				b = bottom 					3 = 1rem
+				=> 		l = left 					4 = 1.5rem
+p = padding 			x = left y right 			5 = 3rem
+						y = top y bottom 			auto = auto
+
+
+Margin se refiere al espaciado externo que permite separar bloques de elementos edel contenido html
+
+Padding corresponde por tanto al espaciado interno del elemento html del contenido web
+
+
+
+Con esta información podemos entonces trabajar con espaciados en BT.
+
+
+
+BT crea clases responsive y que el espaciado interno o externo se aplica a difirentes contextos, ejemplo que se defina un marge de 10 px y que este margen se aplique a textos lg, md o lx pero que no se aplique a contextos small. Esto trae como consecuencia creara diferentes contextos de visualización dependiendo del dispositivo en el que se muestre el contenido.
+
+
+Los lados si por ejemplo no colocamos ninguno se aplicara a los 4 lados por igual, empezando por la parte superior, el lado derecho inferior y conlcuyendo con el lado izquierdo.
+
+Se puede indicar un lado solamente, y luego a continuación hay que indicar el tamaño, para algunas etiquetas html el margen por default es 0 pero no para todos los casos, 
+
+Por ejemplo si queremos definir un margen superior de 1 rem colocariamos 
+
+mt-0 Valor cero
+mt-1 .25rem
+hasta el 5
+
+Para ponerlo en parctica tenemos:
+
+
+----
+
+    <h1 class="text-uppercase">Espaciados</h1>
+
+    <div class="bg-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iure illum nisi veniam sint omnis aut officiis inventore sunt. Consequuntur eligendi itaque, sit libero ipsum corporis ex sequi, assumenda ipsam?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aliquid reprehenderit maxime quia quas voluptatem sint, quibusdam laudantium asperiores eius unde voluptatibus accusamus deserunt repellendus fugiat esse in praesentium quos.</div>
+    
+    <div class="bg-secondary m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iure illum nisi veniam sint omnis aut officiis inventore sunt. Consequuntur eligendi itaque, sit libero ipsum corporis ex sequi, assumenda ipsam?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aliquid reprehenderit maxime quia quas voluptatem sint, quibusdam laudantium asperiores eius unde voluptatibus accusamus deserunt repellendus fugiat esse in praesentium quos.</div>
+    
+    <div class="bg-success">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iure illum nisi veniam sint omnis aut officiis inventore sunt. Consequuntur eligendi itaque, sit libero ipsum corporis ex sequi, assumenda ipsam?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aliquid reprehenderit maxime quia quas voluptatem sint, quibusdam laudantium asperiores eius unde voluptatibus accusamus deserunt repellendus fugiat esse in praesentium quos.</div>
+
+
+Si asignamos m-1 hasta m.5 habra una separación dependiendo de la especificación recordando que 1 rem equivale al tamaño actual del texto. Por default y de manera general es de 16px
+
+Entonces 
+
+		1rem    =   16px
+                   /
+	              /
+                 /
+			    /    
+   			   /
+   		0.25rem	=    ??		    
+
+
+
+Hacemos 16 * 0.25   = 4px		
+
+
+Entonces 
+
+
+		0.25 rem es un espaciado de 4px
+		.5rem   = 8px
+		1rem    = 16px
+		1.5rem  = 20px
+		3rem 	= 40px
+
+
+
+Para los diseños y eseparaciones con BT se haran con la clase
+
+
+Si queremos solamente un espaciado superior:
+	mt-1
+
+El espaciado maximo es hasta el 5
+
+
+Para un margin left
+
+	ml-5
+
+16 * 5 = 40px
+
+Definir margen derecho e izquierdo de 5
+
+	mx-5
+
+El margen automatico, podemos utilizarlo cuando queremos hacer un centrado del bloque en el margin y padding segun se indique.
+
+Esta propiedad se utilizara cuando quieramos centrar una imagen de manera horizontal.
+
+	
+

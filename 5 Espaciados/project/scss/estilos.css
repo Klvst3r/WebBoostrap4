@@ -1,0 +1,36 @@
+/*
+Error: Invalid CSS after "...ndario: orange;": expected selector or at-rule, was "/*-------------..."
+        on line 10 of /Users/klvst3r/www/dev/WebBootstrap4/3-Columnas/project/scss/estilos.scss
+
+5: 
+6: $texto: red;
+7: $principal: white;
+8: $secundario: orange;
+9: 
+10: /*-----------------------------
+11: Estilos de prueba
+12: /*-----------------------------
+13: 
+14: .container{
+15: 	border: 1px solid red;
+
+Backtrace:
+/Users/klvst3r/www/dev/WebBootstrap4/3-Columnas/project/scss/estilos.scss:10
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:42:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `load'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...ndario: orange;\": expected selector or at-rule, was \"/*-------------...\"\A         on line 10 of /Users/klvst3r/www/dev/WebBootstrap4/3-Columnas/project/scss/estilos.scss\A \A 5: \A 6: $texto: red;\A 7: $principal: white;\A 8: $secundario: orange;\A 9: \A 10: /*-----------------------------\A 11: Estilos de prueba\A 12: /*-----------------------------\A 13: \A 14: .container{\A 15: 	border: 1px solid red;"; }
