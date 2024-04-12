@@ -23,3 +23,21 @@ White 		-	.text-white
 
 
 
+Colores de Fondo
+
+bg-<color>
+
+    <h1 class="text-uppercase font-weight-bold bg-secondary text-white ">Traformación de texto</h1>
+
+
+Puedo utilizar colores en la gama de la paleta de colores, definicieno los estilos en CSS
+
+Por ejemplo para el color de fondo
+
+en el archivo de estilos css
+
+.bg-primary{
+	background-color: #d21327!important;
+}
+
+
