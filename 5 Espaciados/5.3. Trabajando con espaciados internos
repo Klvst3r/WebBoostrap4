@@ -1,0 +1,64 @@
+5.3. Trabajando con espaciados internos
+
+Trabajando con la propiedad Padding nos permite trabajar con el espaciado interno.
+
+El trabajo es similar, 
+
+Primero definimos la propiedad
+
+
+Propiedad 				Lado 						Tamaño
+					Vacio = Los 4 lados				0 = 0
+						t = top 					1 = .25rem
+						r = right 					2 = .5rem
+						b = bottom 					3 = 1rem
+p = padding		=> 		l = left 					4 = 1.5rem
+ 						x = left y right 			5 = 3rem
+						y = top y bottom 			auto = auto
+
+
+
+En un ejemplo
+
+Para todos los lados
+	p-0
+
+
+Para un espaciado superior del 1 al 5
+	pt-	
+
+
+
+Ejemplo:
+
+Padding superior
+		
+---
+
+	    
+    <div class="bg-secondary pt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iure illum nisi veniam sint omnis aut officiis inventore sunt. Consequuntur eligendi itaque, sit libero ipsum corporis ex sequi, assumenda ipsam?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aliquid reprehenderit maxime quia quas voluptatem sint, quibusdam laudantium asperiores eius unde voluptatibus accusamus deserunt repellendus fugiat esse in praesentium quos.</div>
+
+
+Los valores tambien estan definidos en rem
+
+Si aumentamos el tamaño de la fuente, tambien aumenta el espaciado.
+
+Ej.
+	Espaciado en todos los lados
+		p-3
+
+
+Espaciado izquierdo y derecho
+	px-2
+
+
+Espaciado superior
+	py-2
+
+
+Ae puede trabajar esto en diferentes contextos, por ejemplo para dispositivos moviles
+
+---
+	<div class="bg-secondary py-2 py-sm-5 py-md-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iure illum nisi veniam sint omnis aut officiis inventore sunt. Consequuntur eligendi itaque, sit libero ipsum corporis ex sequi, assumenda ipsam?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aliquid reprehenderit maxime quia quas voluptatem sint, quibusdam laudantium asperiores eius unde voluptatibus accusamus deserunt repellendus fugiat esse in praesentium quos.</div>
+
+
