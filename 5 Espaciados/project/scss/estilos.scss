@@ -1,0 +1,35 @@
+
+//-----------------------------
+//			Patron de colores
+//-----------------------------
+
+$texto: red;
+$principal: white;
+$secundario: orange;
+
+/*-----------------------------
+Estilos de prueba
+-----------------------------*/
+
+.container{
+	border: 1px solid red;
+}
+
+.row{
+	border: 1px solid blue;
+}
+.row>*{
+	border: 1px solid green;
+}
+
+html{
+	font-size: 10px;
+}
+
+p {
+	font-size: 1rem;
+}
+
+h1{
+	font-size: 2rem;
+}
