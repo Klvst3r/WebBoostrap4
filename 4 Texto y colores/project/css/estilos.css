@@ -30,11 +30,16 @@ h1{
 
 @media(min-width: 768px){
 
-    html{
+    html{ 
      font-size: 18px;
     }
     
+<<<<<<< HEAD
 }  
+=======
+}  ear
+
+>>>>>>> 5_space
 
 .bg-primary{
     background-color: #d21327!important;

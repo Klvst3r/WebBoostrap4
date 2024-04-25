@@ -19,10 +19,13 @@ p {
 h1 {
   font-size: 2rem; }
 
+<<<<<<< HEAD
 @media (min-width: 768px) {
   html {
     font-size: 18px; } }
 .bg-primary {
   background-color: #d21327 !important; }
 
+=======
+>>>>>>> 5_space
 /*# sourceMappingURL=estilos.css.map */
