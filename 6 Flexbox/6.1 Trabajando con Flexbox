@@ -1,0 +1,91 @@
+6.1 Trabajando con Flexbox
+
+ Flexbox es un conjunto de propiedades que permiten un mayor control sobre los elementos HTML, grtacias a Flexbox, se crean alineaciones horizontales como verticales.
+
+ Flexbox ayuda de una manera soncilla con menos inversión de codigo. hoy dia los diseños se realizan con flexbox, y hoy día Bootstrap paso toda su estructura a Flexbox.
+
+ Todo el sistema de columnas esta hecho usando con Flexbox, potenciando bt, y cn ello se crean clases para alinear diferentes elementos o bloques HTML.
+
+ Bajo esta necesidad. Se crean clases empaquetadas en el min.css y se ponen a disposición de los usuarios.
+
+ el objetivo es usar en cualquier sistema, basado en dos elementos principalmente.
+
+ Trabajando con Flexbox.
+
+ Teniendo en cuanta conociendo a Flexbox, en su entorno primeramente tendremos que tener un padre flexible.
+
+ Es decir un Flex Container, un contenedor que no es otra cosa que un contenedor que tiene varios hijos.
+
+ Con un ejemplo.
+
+ Se tiene un contenedor, y dentro diferentes etiquetas div., para convertir este tipo de etiquetas, en un entorno flexbox, se debe tener una etiqueta la propiedad display  asignarle el valor flex.
+
+ Cuando se hace de manera automatica, se crea un entorno, flexbox. Gracias a un container que tiene una etiqueta con la propiedad display-flex, con ello se puede manipular a los hijos.
+
+ Haciendo que los elementos div, se apilen en forma de columna, y se puede hacer que los div, ocupen el doble de otros hermanos.
+
+ Se puede hacer que un hijo, que el espacio que le sobra entre la caja, con una sola propiedad, se puede alinear todos los hijos de manera horizontal.
+
+ Se puede hacer una alienación tanto horizontal como vertical.
+
+ Para iniciar este entorno se tienen que definir, un aetiqueta padre la propiedad flex.
+
+ Ahora, se debe tener claro, que el sistema de columnas de Bootstrap, esta basado usando flexbox.
+
+ Crando una pequeña estructura de ejemplo:
+
+ ----
+ 	<!doctype html>
+	<html lang="es">
+	  <head>
+	    <!-- Required meta tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	    <!-- Bootstrap CSS -->
+	    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+	    <!-- Estilos personalizados -->
+	    <link type="text/css" rel="stylesheet" href="css/estilos.css">
+
+
+	    <title>Hello, world!</title>
+	  </head>
+	  <body>
+
+	    <div class="container">
+	      <div class="row">
+	        <div class="col-1">Col 1</div>
+	        <div class="col-1">Col 2</div>
+	        <div class="col-1">Col 3</div>
+	        <div class="col-1">Col 4</div>
+	        <div class="col-1">Col 5</div>
+	        <div class="col-1">Col 6</div>
+	      </div>
+	    </div>
+	    
+	      
+
+	    <!-- Librerias JS: jQuery and Bootstrap Bundle (includes Popper) Local -->
+	    <script src="js/jquery-3.7.1.js "></script>
+	    <script src="js/popper-1.16.1.js"></script>
+	    <script src="js/bootstrap.js"></script>
+
+	    
+	  </body>
+	</html>
+
+
+
+Se ha creado un contenedor, con un row es una clase que genera una fila y se han creado seis columnas dentro del grid de Bootstrap.
+
+Esto hace que cada columna o bloque ocupe uno de doce columnas disponible. por que soporta hasta doce cajas por columna.
+
+
+Cada bloque se muestra al lado del otro. Podemos seleccionar la clase div con cada caja o elemento.
+
+De hecho se puede crear cada clase row, la propiedad con el valor flex.
+
+Se esta creando con esto un entorno flexible basado en flexbox.
+
+Con esto se crea no solo para la base de columnas.
+
