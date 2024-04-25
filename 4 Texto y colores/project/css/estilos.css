@@ -30,8 +30,13 @@ h1{
 
 @media(min-width: 768px){
 
-    html{
+    html{ 
      font-size: 18px;
     }
     
-}  
+}  ear
+
+
+.bg-primary{
+    background-color: #d21327!important;
+}

@@ -56,9 +56,21 @@ Espaciado superior
 	py-2
 
 
-Ae puede trabajar esto en diferentes contextos, por ejemplo para dispositivos moviles
+Se puede trabajar esto en diferentes contextos, por ejemplo para dispositivos moviles
 
 ---
-	<div class="bg-secondary py-2 py-sm-5 py-md-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iure illum nisi veniam sint omnis aut officiis inventore sunt. Consequuntur eligendi itaque, sit libero ipsum corporis ex sequi, assumenda ipsam?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aliquid reprehenderit maxime quia quas voluptatem sint, quibusdam laudantium asperiores eius unde voluptatibus accusamus deserunt repellendus fugiat esse in praesentium quos.</div>
+	    <h1 class="text-uppercase">Espaciados con Padding</h1>
+
+    <div class="bg-danger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iure illum nisi veniam sint omnis aut officiis inventore sunt. Consequuntur eligendi itaque, sit libero ipsum corporis ex sequi, assumenda ipsam?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aliquid reprehenderit maxime quia quas voluptatem sint, quibusdam laudantium asperiores eius unde voluptatibus accusamus deserunt repellendus fugiat esse in praesentium quos.</div>
+    
+    <div class="bg-secondary py-2 py-sm-5 py-md-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iure illum nisi veniam sint omnis aut officiis inventore sunt. Consequuntur eligendi itaque, sit libero ipsum corporis ex sequi, assumenda ipsam?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aliquid reprehenderit maxime quia quas voluptatem sint, quibusdam laudantium asperiores eius unde voluptatibus accusamus deserunt repellendus fugiat esse in praesentium quos.</div>
+    
+    <div class="bg-success pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iure illum nisi veniam sint omnis aut officiis inventore sunt. Consequuntur eligendi itaque, sit libero ipsum corporis ex sequi, assumenda ipsam?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aliquid reprehenderit maxime quia quas voluptatem sint, quibusdam laudantium asperiores eius unde voluptatibus accusamus deserunt repellendus fugiat esse in praesentium quos.</div>
+
+
+
+Se esta en versiones moviles y ahi los espaciados son mas pequeños. Esto se llama espaciados contextuales, que permite crear hojas estilos de acuerdo al dispositivo utilizado.
+
+
 
 
