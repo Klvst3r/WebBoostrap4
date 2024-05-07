@@ -10,7 +10,9 @@
 
  el objetivo es usar en cualquier sistema, basado en dos elementos principalmente.
 
- Trabajando con Flexbox.
+ 
+ Trabajando con Flexbo
+ ----------------------
 
  Teniendo en cuanta conociendo a Flexbox, en su entorno primeramente tendremos que tener un padre flexible.
 
@@ -88,4 +90,14 @@ De hecho se puede crear cada clase row, la propiedad con el valor flex.
 Se esta creando con esto un entorno flexible basado en flexbox.
 
 Con esto se crea no solo para la base de columnas.
+
+
+La alineación se puede hacer de manera vertical como de manera horizontal.
+
+Para hacer esto necesitamos un contenedor que tenga la propiedd padre	flex.
+
+
+El sistema de columnas de boostrap esta basado en columnas.
+
+
 
