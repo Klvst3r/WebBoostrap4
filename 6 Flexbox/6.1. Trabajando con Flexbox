@@ -1,0 +1,57 @@
+6.1. Trabajando con Flexbox
+
+Flexbox e una de las novedades de CSS3, definiendose como un conjunto de propiedades que permiten obtener un control sobre los elementos HTML, ya que empiezana  darse alineaciones horizontales y verticales.
+
+Esto es que si se creaban sitios web antes  de mas de una decada a esta fecha, crear alineaciónes de manera horizontal y vertical era muy dificil casi magico, conmuchas reglas CSS y aun asi no se conseguian los resultados que se querian.
+
+Flexbox entonces ayudo a crear sitios web de una manera, mucho mas sencilla y consistente con una inversión menor de codigo, ya que hoy dia ya no se utilizan tanto los diseños con cajas flotantes.
+
+Hoy en día los diseños se utilizan con flexbox. Dando a esto con bt un nuevo panorama con el sistema sde columnas de BT, esto mejoro enormemente.
+
+
+Asi por ejemplo ahora podemos hacer un contenedor con flexbox de la siguiente manera por ejemplo.
+
+	<div class="d-flex p-2 bd-highlight">I'm a flexbox container!</div>
+
+O un contenedor inline
+	<div class="d-inline-flex p-2 bd-highlight">I'm an inline flexbox container!</div>
+
+
+Podemos dar una dirección a los contenedores
+	
+	<div class="d-flex flex-row bd-highlight mb-3">
+	  <div class="p-2 bd-highlight">Flex item 1</div>
+	  <div class="p-2 bd-highlight">Flex item 2</div>
+	  <div class="p-2 bd-highlight">Flex item 3</div>
+	</div>
+	<div class="d-flex flex-row-reverse bd-highlight">
+	  <div class="p-2 bd-highlight">Flex item 1</div>
+	  <div class="p-2 bd-highlight">Flex item 2</div>
+	  <div class="p-2 bd-highlight">Flex item 3</div>
+	</div>	
+
+
+Usando columnas verticales
+
+	<div class="d-flex flex-column bd-highlight mb-3">
+	  <div class="p-2 bd-highlight">Flex item 1</div>
+	  <div class="p-2 bd-highlight">Flex item 2</div>
+	  <div class="p-2 bd-highlight">Flex item 3</div>
+	</div>
+	<div class="d-flex flex-column-reverse bd-highlight">
+	  <div class="p-2 bd-highlight">Flex item 1</div>
+	  <div class="p-2 bd-highlight">Flex item 2</div>
+	  <div class="p-2 bd-highlight">Flex item 3</div>
+	</div>	
+
+Puede haber alineación de elementos
+
+
+
+
+Referencias:
+	Ver 4.6.
+		https://getbootstrap.com/docs/4.6/utilities/flex/
+
+	Ver 5.1
+		https://getbootstrap.com/docs/5.1/utilities/flex/		
